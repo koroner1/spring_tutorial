@@ -1,6 +1,5 @@
 package cz.jiripinkas.jba.service;
 
-import java.security.DigestException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
