@@ -49,12 +49,10 @@
 <form class="form-signin" action='<spring:url value="/login"/>'
 	method='POST'>
 	<h2 class="form-signin-heading">Please sign in</h2>
-	<label for="inputEmail" class="sr-only">Name</label> 
 	<input
-		type="text" id="inputEmail" class="form-control" placeholder="Name"
+		type="text" name="username" class="form-control" placeholder="Name"
 		required autofocus>
-	<label for="inputPassword" class="sr-only">Password</label>
-	<input type="password" id="inputPassword" class="form-control"
+	<input type="password" name="password" class="form-control"
 		placeholder="Password" required>
 
 	<button class="btn btn-lg btn-primary btn-block" type="submit">Sign
