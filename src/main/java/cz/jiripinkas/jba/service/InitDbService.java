@@ -47,11 +47,18 @@ public class InitDbService {
 		
 		User userAdmin = new User();
 		userAdmin.setName("admin");
+		userAdmin.setPassword("admin");
 		List<Role> roles = new ArrayList<Role>();
 		roles.add(roleAdmin);
 		roles.add(roleUser);
 		userAdmin.setRoles(roles);
 		userRepository.save(userAdmin);
+		
+		User userAdmin1 = new User();
+		userAdmin1.setName("mmm");
+		userAdmin1.setPassword("mmm");
+		userAdmin1.setRoles(roles);
+		userRepository.save(userAdmin1);
 		
 		Blog blogJavavids = new Blog();
 		blogJavavids.setName("JavaVids");
