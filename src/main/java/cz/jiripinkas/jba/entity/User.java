@@ -33,6 +33,17 @@ public class User {
 	public List<Blog> getBlogs() {
 		return blogs;
 	}
+	
+	private boolean enabled;
+	
+
+	public boolean isEnabled() {
+		return enabled;
+	}
+
+	public void setEnabled(boolean enabled) {
+		this.enabled = enabled;
+	}
 
 	public void setBlogs(List<Blog> blogs) {
 		this.blogs = blogs;
