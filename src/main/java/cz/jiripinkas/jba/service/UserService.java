@@ -60,7 +60,6 @@ public class UserService {
 		user.setEnabled(true);
 		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 		user.setPassword(encoder.encode(user.getPassword()));
-		
 		List<Role> roles = new ArrayList<Role>();
 		roles.add(roleRepository.findByName("ROLE_USER"));
 		user.setRoles(roles);
