@@ -22,8 +22,8 @@ public class Item {
 	@Column(length= 1000)
 	private String title;
 	
-	@Lob
-	@Type(type = "org.hibernate.type.StringClobType")
+/*	@Type(type = "org.hibernate.type.StringClobType")
+*/	@Lob
 	@Column(length = Integer.MAX_VALUE)
 	private String description;
 	
