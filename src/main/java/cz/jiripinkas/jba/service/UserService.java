@@ -40,8 +40,11 @@ public class UserService {
 	}
 
 	public User findOne(int id) {
-		// TODO Auto-generated method stub
 		return userRepository.findOne(id);
+	}
+	
+	public User findOne(String username) {
+		return userRepository.findByName(username);
 	}
 	
 	@Transactional
@@ -74,4 +77,6 @@ public class UserService {
 	public void delete(int id) {
 		userRepository.delete(id);
 	}
+
+	
 }
